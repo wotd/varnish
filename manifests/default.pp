@@ -1,4 +1,4 @@
-node 'web1' {
+node /^web[12]$/ {
   class { 'apache':
     mpm_module  => 'prefork'
   }
