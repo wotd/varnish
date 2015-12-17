@@ -33,10 +33,6 @@ sub vcl_init {
     random_director.add_backend(web2, 5);   # 1/3 to backend two
 }
 
-#backend default {
-#    .host = "127.0.0.1";
-#    .port = "8080";
-#}
 
 sub vcl_recv {
     # Happens before we check if we have this in cache already.
